@@ -14,7 +14,7 @@ moviePoster.addEventListener('click', () => {
 });
 
 closeBtn.addEventListener('click', () => {
-    modal.style.display = 'none'
+    modal.style.display = 'none';
 });
 
 window.addEventListener('click', (event) => {

@@ -41,11 +41,6 @@ html {
     animation: slide-from-left 3.5s ease-in-out forwards;
 }
 
-.movie-poster {
-    width: 300px;
-    cursor: pointer;
-}
-
 @keyframes slide-from-left {
     80% {left: 1.5rem;}
     100% {left: 0;}    
@@ -161,7 +156,12 @@ html {
 }
 
 .movie-poster-modal {
-    width: 300px;
+    width: 325px;
+}
+
+.movie-poster {
+    width: 325px;
+    cursor: pointer;
 }
 
 footer {
