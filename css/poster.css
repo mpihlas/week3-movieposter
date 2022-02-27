@@ -41,6 +41,11 @@ html {
     animation: slide-from-left 3.5s ease-in-out forwards;
 }
 
+.movie-poster {
+    width: 300px;
+    cursor: pointer;
+}
+
 @keyframes slide-from-left {
     80% {left: 1.5rem;}
     100% {left: 0;}    
@@ -101,8 +106,7 @@ html {
     height: 50px;
     width: 50px;
     border-radius: 50%;
-    background-color: rgb(3, 37, 65);
-    
+    background-color: rgb(148, 9, 9);
 }
 
 .movie-info-actions ul li a {
@@ -113,6 +117,51 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.500);
+    z-index: 2;
+    top: 0;
+    left: 0;
+    text-align: center;
+}
+
+.modal-content {
+    background-color: rgb(160, 177, 185);
+    margin: 5% auto;
+    padding: 5rem;
+    width: 600px;
+    height: 750px;
+    animation: zoom-in 1s;
+}
+
+.modal-title {
+    margin: 2rem;
+    text-transform: uppercase;
+    color:rgba(0, 0, 0, 0.670);
+    font-size: 1.3rem;
+    letter-spacing: 0.1rem;
+}
+
+@keyframes zoom-in {
+    0% {transform: scale(0);}
+    100% {transform: scale(1);}
+}
+
+.closeBtn {
+    float: right;
+    cursor: pointer;
+    font-size: 2rem;
+    color:rgba(0, 0, 0, 0.670);
+}
+
+.movie-poster-modal {
+    width: 300px;
 }
 
 footer {
